@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
 import Card from "./shared/Card";
 
-function FeedbackItem({ item }) {
+function FeedbackItem(props) {
+  const { item } = props;
   return (
     <Card reverse={true}>
       <div className="num-display">{item.rating}</div>

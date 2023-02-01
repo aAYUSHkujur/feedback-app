@@ -7,7 +7,7 @@ import FeedbackContext from "../context/FeedbackContext";
 function FeedbackItem({ item }) {
   const { deleteFeedback, editFeedback } = useContext(FeedbackContext);
   return (
-    <Card reverse={true}>
+    <Card reverse={false}>
       <div className="num-display">{item.rating}</div>
       <button
         onClick={() => {
